@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+video {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.links img {
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  border: solid 5px;
+  margin-bottom: 2%;
+}
+.links h1,a {
+  font-family: "Ysabeau Infant", sans-serif;
+
+  font-size: 40px;
+  text-shadow: 5px 2px 10px gray;
+}
+.links h1::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffdf00, #009c3b);
+  top: 42%;
+}
+.links a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(
+    26,
+    25,
+    25,
+    0.5
+  ); 
+  color: #f0f0f0;
+  padding: 1rem 10rem;
+  margin-top: 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.links a:hover {
+  background-color: gray;
+}
+.down-set img{
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 60px;
+  height: 60px;
+  animation: jump 1s linear infinite;
+  cursor: pointer;
+  }
+  
+  @keyframes jump{
+    from{transform: translateY(-15px);}
+    50%{transform: translate(0);}
+    to{transform: translateY(-15px);}
+  }
+  
+.table {
+  display: flex;
+  background-color: black;
+  width: 100vw;
+  height: 800px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+  .table img{
+    z-index: 2;
+  }
+
+.table table {
+  width: 100%;
+  min-height: 400px;
+  height: 100%;
+  padding: 10% 10%;
+  background-image: url("/images/Imagem_do_WhatsApp_de_2024-03-27_à_s__11.50.46_b9dab052-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+
+}
+
+.table thead, tbody {
+  font-size: 23px;
+  background-color: rgba(
+    26,
+    25,
+    25,
+    0.5
+  );   color: #f0f0f0;
+  padding: 2rem;
+}
+.table thead{
+  background-color: #f0f0f0;
+  background-color: rgba(255, 251, 251, 0.5); }
+
+.table ::after
+.logo-times {
+  width: 100%;
+  position: relative;
+}
+.logo-times img {
+  width: 100px;
+}
+.ficha {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background-color: black;
+}
+.ficha div {
+  display: flex;
+  padding: 0 15%;
+  flex-direction: column;
+}
+.container-photos{
+  width: 100vw;
+ background-color: black;
+}
+.photos{
+  display: flex;
+  padding: 5%;
+}
+  .photos img{
+    width: 33.33%;
+  }
+
+footer {
+  display: flex;
+  width: 100vw;
+  height: 5rem;
+  background-color: gray;
+  color: #f0f0f0;
+  align-items: center;
+  justify-items: center;
+  padding-left: 30%;
+  font-size: 18px;
+}
+.up-set {
+  position: relative; /* Alterado para "relative" para permitir que a imagem permaneça no fluxo do documento */
+}
+
+.up-set img {
+  position: absolute; /* Alterado para "fixed" para garantir que a imagem permaneça na mesma posição ao rolar */
+  right: 2%;
+  bottom: 7%;
+  width: 50px;
+  height: 50px;
+  animation: jump 2s linear infinite;
+  cursor: pointer;
+}
