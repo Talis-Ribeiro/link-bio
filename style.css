@@ -87,7 +87,7 @@ a {
   }
 }
 /* Aqui começam as medias para telas de até 375px do banner principal */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   body {
     width: 100%;
   }
@@ -195,7 +195,7 @@ tbody {
   background-color: rgba(255, 251, 251, 0.5);
 }
 /* Aqui começam as query para a sessão da tabela de clubes */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .table table {
     width: 100%;
     height: 100%;
@@ -242,7 +242,7 @@ tbody {
   width: 33.33%;
 }
 /* Aqui começam as query para a sessão da ficha */
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:400px) {
   .ficha{
     display: flex;
     flex-direction: column;
@@ -307,7 +307,7 @@ footer {
   animation: jump 2s linear infinite;
   cursor: pointer;
 }
-@media only screen and (max-width:375px){
+@media only screen and (max-width:400px) {
   footer{
     font-size: 12px;
     padding: 2%;
