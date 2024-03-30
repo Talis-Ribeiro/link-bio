@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
-.banner-principal{
+.banner-principal {
   width: 100vw;
   height: auto;
 }
@@ -25,7 +25,6 @@ video {
   top: 25%;
   left: 25%;
 }
-  
 
 .links img {
   width: 20%;
@@ -34,7 +33,8 @@ video {
   border: solid 5px;
   margin-bottom: 2%;
 }
-.links h1,a {
+.links h1,
+a {
   font-family: "Ysabeau Infant", sans-serif;
 
   font-size: 40px;
@@ -51,12 +51,7 @@ video {
 .links a {
   text-decoration: none;
   font-size: 20px;
-  background-color: rgba(
-    26,
-    25,
-    25,
-    0.5
-  ); 
+  background-color: rgba(26, 25, 25, 0.5);
   color: #f0f0f0;
   padding: 1rem 10rem;
   margin-top: 25px;
@@ -70,7 +65,7 @@ video {
 .links a:hover {
   background-color: gray;
 }
-.down-set img{
+.down-set img {
   position: absolute;
   right: 0%;
   bottom: 0%;
@@ -78,81 +73,92 @@ video {
   height: 60px;
   animation: jump 1s linear infinite;
   cursor: pointer;
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(-15px);
   }
-  
-  @keyframes jump{
-    from{transform: translateY(-15px);}
-    50%{transform: translate(0);}
-    to{transform: translateY(-15px);}
+  50% {
+    transform: translate(0);
   }
-  /* Aqui começam as medias para telas de até 375px do banner principal */
-  @media only screen and (max-width:375px){
-    video {
-      min-width: 375px;
-      height: auto;
-    }
-    .links h1,a {
-      font-family: "Ysabeau Infant", sans-serif;
-    
-      font-size:15px;
-      text-shadow: 5px 2px 10px gray;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top:2%;
-      left: 5%;
-      padding: 0%;
-    }
-    .links img {
-      width: 10%;
-      height: 5%;
-      border-radius: 50%;
-      border: solid 2px;
-    }
-    .links a {
-      text-decoration: none;
-      font-size: 12px;
-      background-color: rgba(
-        26,
-        25,
-        25,
-        0.5
-      ); 
-      color: #f0f0f0;
-      text-align: center;
-      justify-content: center;
-      border-radius: 15px;
-      padding: 0 1rem;
-      margin: 2%;
-      width: 5rem;
-    }
-    .links h1::before {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 2px;
-      background: linear-gradient(90deg, #ffdf00, #009c3b);
-      top: 33%;
-    }
-    .down-set img{
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      top:30%;
-      animation: jump 1s linear infinite;
-      cursor: pointer;
-      }
-      
-      @keyframes jump{
-        from{transform: translateY(-15px);}
-        50%{transform: translate(0);}
-        to{transform: translateY(-15px);}
-      }
+  to {
+    transform: translateY(-15px);
   }
+}
+/* Aqui começam as medias para telas de até 375px do banner principal */
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  video {
+    min-width: 375px;
+    height: auto;
+  }
+  .links h1,
+  a {
+    font-family: "Ysabeau Infant", sans-serif;
+
+    font-size: 15px;
+    text-shadow: 5px 2px 10px gray;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    padding: 0%;
+  }
+  .links img {
+    width: 10%;
+    height: 5%;
+    border-radius: 50%;
+    border: solid 2px;
+  }
+  .links a {
+    text-decoration: none;
+    font-size: 12px;
+    background-color: rgba(26, 25, 25, 0.5);
+    color: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 0 1rem;
+    margin: 2%;
+    width: 5rem;
+  }
+  .links h1::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    top: 33%;
+  }
+  .down-set img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 30%;
+    animation: jump 1s linear infinite;
+    cursor: pointer;
+  }
+
+  @keyframes jump {
+    from {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translate(0);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+}
 .table {
   display: flex;
   background-color: black;
@@ -162,9 +168,9 @@ video {
   align-items: center;
   justify-content: center;
 }
-  .table img{
-    z-index: 2;
-  }
+.table img {
+  z-index: 2;
+}
 
 .table table {
   width: 100%;
@@ -175,23 +181,37 @@ video {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
-
 }
 
-.table thead, tbody {
+.table thead,
+tbody {
   font-size: 23px;
-  background-color: rgba(
-    26,
-    25,
-    25,
-    0.5
-  );   color: #f0f0f0;
+  background-color: rgba(26, 25, 25, 0.5);
+  color: #f0f0f0;
   padding: 2rem;
 }
-.table thead{
+.table thead {
   background-color: #f0f0f0;
-  background-color: rgba(255, 251, 251, 0.5); }
+  background-color: rgba(255, 251, 251, 0.5);
+}
+/* Aqui começam as query para a sessão da tabela de clubes */
+@media only screen and (max-width: 375px) {
+  .table table {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Imagem_do_WhatsApp_de_2024-03-27_à_s__11.50.46_b9dab052-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
 
+  .table thead,
+  tbody {
+    font-size: 18px;
+  }
+  thead{
+    font-size: 25px;
+  }
+}
 .logo-times {
   width: 100%;
   position: relative;
@@ -210,18 +230,59 @@ video {
   padding: 0 15%;
   flex-direction: column;
 }
-.container-photos{
+.container-photos {
   width: 100vw;
- background-color: black;
+  background-color: black;
 }
-.photos{
+.photos {
   display: flex;
   padding: 5%;
 }
-  .photos img{
-    width: 33.33%;
+.photos img {
+  width: 33.33%;
+}
+/* Aqui começam as query para a sessão da ficha */
+@media only screen and (max-width:375px) {
+  .ficha{
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-times {
+    display: flex;
+    margin-top: 10px; 
+  }  
+  .logo-times img {
+    width: 25%;
+    height: auto;
+    margin: 5px;
+    animation: passar 10s linear infinite;
+  }
+  @keyframes passar {
+    0% {
+      transform: translateX(-100%); /* Começa fora da tela, à esquerda */
+    }
+    100% {
+      transform: translateX(100vw); /* Move para fora da tela, à direita */
+    }
   }
 
+  #ficha-tecnica{
+    width: 375px;
+    height: 300px;
+  }
+  
+  .container-photos {
+    width: 100vw;
+    background-color: black;
+  }
+  .photos {
+    display: flex;
+    padding: 5%;
+  }
+  .photos img {
+    width: 33.33%;
+  }
+  }
 footer {
   display: flex;
   width: 100vw;
@@ -245,4 +306,14 @@ footer {
   height: 50px;
   animation: jump 2s linear infinite;
   cursor: pointer;
+}
+@media only screen and (max-width:375px){
+  footer{
+    font-size: 12px;
+    padding: 2%;
+    margin: 0%;
+  }
+  .up-set img{
+    visibility: hidden;
+  }
 }
